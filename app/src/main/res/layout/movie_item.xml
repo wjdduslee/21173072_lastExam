@@ -64,7 +64,7 @@
                     android:textColor="#FF0000"
                     android:textSize="16sp" />
                 <TextView
-                    android:id="@+id/audiAcc"
+                    android:id="@+id/personNm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"

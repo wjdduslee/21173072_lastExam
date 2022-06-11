@@ -93,18 +93,18 @@ public class MainActivity extends AppCompatActivity {
     public void println(String data) {
         Log.d("MainActivity",data);
 
-}
-public void  processResponse(String response)
-{
-    Gson gson  = new Gson();
-    MovieList movieList = gson.fromJson(response,MovieList.class);
-    println("영화 정보의 수: " + movieList.boxOfficeResult.dailyBoxOfficeList.size());
-
-    for(int i=0; i<movieList.boxOfficeResult.dailyBoxOfficeList.size();i++)
-    {
-        Movie movie = movieList.boxOfficeResult.dailyBoxOfficeList.get(i) ;
-        adapter.addItem(movie);
     }
-    adapter.notifyDataSetChanged();
-}
+    public void  processResponse(String response)
+    {
+        Gson gson  = new Gson();
+        MovieList movieList = gson.fromJson(response,MovieList.class);
+        println("영화 정보의 수: " + movieList.boxOfficeResult.dailyBoxOfficeList.size());
+
+        for(int i=0; i<movieList.boxOfficeResult.dailyBoxOfficeList.size();i++)
+        {
+            Movie movie = movieList.boxOfficeResult.dailyBoxOfficeList.get(i) ;
+            adapter.addItem(movie);
+        }
+        adapter.notifyDataSetChanged();
+    }
 }
