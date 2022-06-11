@@ -45,30 +45,30 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     static class ViewHolder extends RecyclerView.ViewHolder{
         TextView movieName;
         TextView peopleCount;
-        TextView rank;
-        TextView personNm;
-        TextView openDt;
-        TextView salesAmt;
+        TextView order;
+        TextView accumulate;
+        TextView open;
+        TextView money;
 
 
         public ViewHolder(View itemView){
             super(itemView);
             movieName = itemView.findViewById(R.id.movieName);
             peopleCount = itemView.findViewById(R.id.peopleCount);
-            rank = itemView.findViewById(R.id.rank);
-            personNm= itemView.findViewById(R.id.personNm);
-            openDt = itemView.findViewById(R.id.openDt);
-            salesAmt = itemView.findViewById(R.id.salesAmt);
+            order = itemView.findViewById(R.id.order);
+            accumulate= itemView.findViewById(R.id.accumulate);
+            open = itemView.findViewById(R.id.open);
+            money = itemView.findViewById(R.id.money);
 
         }
 
         public void setItem(Movie item){
             movieName.setText(item.movieNm);
             peopleCount.setText(item.audiCnt);
-            rank.setText(item.rank);
-            personNm.setText(item.audiAcc);
-            openDt.setText(item.openDt);
-            salesAmt.setText(item.salesAmt);
+            order.setText(item.rank);
+            accumulate.setText(item.audiAcc);
+            open.setText(item.openDt);
+            money.setText(item.salesAmt);
 
         }
 
