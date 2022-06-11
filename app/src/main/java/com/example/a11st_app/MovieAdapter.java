@@ -48,6 +48,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView rank;
         TextView personNm;
         TextView openDt;
+        TextView salesAmt;
+
 
         public ViewHolder(View itemView){
             super(itemView);
@@ -56,6 +58,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             rank = itemView.findViewById(R.id.rank);
             personNm= itemView.findViewById(R.id.personNm);
             openDt = itemView.findViewById(R.id.openDt);
+            salesAmt = itemView.findViewById(R.id.salesAmt);
+
         }
         public void setItem(Movie item){
             movieName.setText(item.movieNm);
@@ -63,6 +67,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             rank.setText(item.rank);
             personNm.setText(item.audiAcc);
             openDt.setText(item.openDt);
+            salesAmt.setText(item.salesAmt);
 
         }
 
