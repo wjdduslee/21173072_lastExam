@@ -49,22 +49,22 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView personNm;
         TextView openDt;
 
-                public ViewHolder(View itemView){
-                    super(itemView);
-                    movieName = itemView.findViewById(R.id.movieName);
-                    peopleCount = itemView.findViewById(R.id.peopleCount);
-                    rank = itemView.findViewById(R.id.rank);
-                    personNm= itemView.findViewById(R.id.personNm);
-                    openDt = itemView.findViewById(R.id.openDt);
-                }
-                public void setItem(Movie item){
-                    movieName.setText(item.movieNm);
-                    peopleCount.setText(item.audiCnt);
-                    rank.setText(item.rank);
-                    personNm.setText(item.audiCnt);
-                    openDt.setText(item.openDt);
+        public ViewHolder(View itemView){
+            super(itemView);
+            movieName = itemView.findViewById(R.id.movieName);
+            peopleCount = itemView.findViewById(R.id.peopleCount);
+            rank = itemView.findViewById(R.id.rank);
+            personNm= itemView.findViewById(R.id.personNm);
+            openDt = itemView.findViewById(R.id.openDt);
+        }
+        public void setItem(Movie item){
+            movieName.setText(item.movieNm);
+            peopleCount.setText(item.audiCnt);
+            rank.setText(item.rank);
+            personNm.setText(item.audiCnt);
+            openDt.setText(item.openDt);
 
-                }
+        }
 
     }
 }

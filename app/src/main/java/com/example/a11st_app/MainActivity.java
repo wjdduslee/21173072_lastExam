@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     EditText requestText;
     TextView responseText;
 
+
     static RequestQueue requestQueue;
 
     RecyclerView recyclerView;

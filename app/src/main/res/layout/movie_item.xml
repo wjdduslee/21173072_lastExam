@@ -42,6 +42,7 @@
                     android:text="영화제목"
                     android:textSize="22sp" />
 
+
                 <TextView
                     android:id="@+id/peopleCount"
                     android:layout_width="wrap_content"

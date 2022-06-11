@@ -5,7 +5,7 @@ public class Movie {
     String rank;
     String rankInten;
     String rankOldAndnew;
-    String movieCd;
+    String MovieCd;
     String movieNm;
     String openDt;
     String salesAnt;
@@ -18,4 +18,5 @@ public class Movie {
     String audiAcc;
     String scrnCnt;
     String showCnt;
+
 }
