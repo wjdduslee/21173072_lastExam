@@ -9,5 +9,4 @@ public class MovieListResult {
 
     ArrayList<Movie> dailyBoxOfficeList = new ArrayList<Movie>();
 
-
 }

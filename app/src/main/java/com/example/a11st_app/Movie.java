@@ -2,6 +2,7 @@ package com.example.a11st_app;
 
 public class Movie {
 
+
     String rnum;
     String rank;
     String rankInten;
