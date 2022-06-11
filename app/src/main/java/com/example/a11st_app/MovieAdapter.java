@@ -61,6 +61,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             salesAmt = itemView.findViewById(R.id.salesAmt);
 
         }
+
         public void setItem(Movie item){
             movieName.setText(item.movieNm);
             peopleCount.setText(item.audiCnt);
