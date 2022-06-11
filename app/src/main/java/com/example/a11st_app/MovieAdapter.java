@@ -61,7 +61,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             movieName.setText(item.movieNm);
             peopleCount.setText(item.audiCnt);
             rank.setText(item.rank);
-            personNm.setText(item.audiCnt);
+            personNm.setText(item.audiAcc);
             openDt.setText(item.openDt);
 
         }
