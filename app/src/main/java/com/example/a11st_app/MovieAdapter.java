@@ -68,7 +68,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             order.setText(item.rank);
             order.append(" 위");
             accumulate.setText(item.audiAcc);
-            accumulate.append(" : 누적관람객수");
+            accumulate.append("명 : 누적관람객수");
             open.setText(item.openDt);
             open.append(" : 개봉일");
             money.setText(item.salesAmt);
